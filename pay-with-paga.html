@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .first__div {
+            flex: 1;
+            /* padding: 1rem; */
+        }
+
+        .second__div {
+            background-color: #e4ecf3;
+            flex: 1;
+            width: 40%;
+        }
+
+        .pay {
+            width: 300px;
+            margin-top: 180px;
+        }
+
+        .payment__options__header {
+            display: flex;
+            align-items: center;
+            margin: 0 0 20px 40px;
+        }
+
+        .payment__options__header h4 {
+            font-family: FLW-Regular;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #333333;
+        }
+
+        .hover:hover {
+            background: rgba(242, 201, 76, 0.18);
+        }
+
+        .ul {
+            display: flex;
+            align-items: center;
+            margin-left: 40px;
+            border-bottom: 1px solid #d8d8d8;
+            height: 50px;
+        }
+
+        .ul a {
+            text-decoration: none;
+        }
+
+        .ul a span {
+            font-size: 12px;
+            line-height: 13px;
+            color: #4f4f4f;
+            font-family: FLW-Regular;
+            margin-left: 15px;
+        }
+
+        .more__payment__options {
+            display: flex;
+            align-items: center;
+            margin: 40px 0 0 40px;
+        }
+
+        .more__payment__options p {
+            font-family: FLW-Regular;
+            font-size: 13px;
+            line-height: 18px;
+            text-align: right;
+            color: #666666;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="first__div">
+            <div class="checkout__form">
+                <button class="go__back">
+                    <svg width="16" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                            <path
+                                d="M10.4674 0.718605C10.5512 0.634884 10.593 0.534884 10.593 0.418605C10.593 0.302326 10.5512 0.204651 10.4674 0.125581C10.3884 0.0418605 10.2907 0 10.1744 0C10.0581 0 9.95814 0.0418605 9.87442 0.125581L4 6L9.87442 11.8814C9.95814 11.9605 10.0581 12 10.1744 12C10.2907 12 10.3884 11.9605 10.4674 11.8814C10.5512 11.7977 10.593 11.6977 10.593 11.5814C10.593 11.4651 10.5512 11.3674 10.4674 11.2884L5.18605 6L10.4674 0.718605Z"
+                                fill="#2D9CDB" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="14.593" height="20" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    <span>Go back</span>
+                </button>
+                <div class="main__dispaly__option">
+                    <div class="form__option">
+                        <div class="display__logo">
+                            <img src="assets/img/logo.png" class="logo" />
+                            <span>Dropbox paper</span>
+                        </div>
+
+                        <div class="language__option">
+                            <select class="select__style">
+                                <option>English</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="currency__display">
+                        <p>KES 234,567</p>
+                        <span>tedlade.tl@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="transaction__details">
+                    <div class="transaction__details__header">
+                        <p>Please choose your bank to begin payment</p>
+                    </div>
+
+                    <div class="input-form">
+                        <div class="card input__icon">
+                            <label class="label">Phone Number</label>
+                            <input type="text" maxlength="11" placeholder="07086493069" />
+                            <!-- <img src="/assets/img/credit__card.svg"> -->
+                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <g clip-path="url(#clip1)">
+                                        <path
+                                            d="M9.00008 12.6827C9.34524 12.6827 9.62504 12.4029 9.62504 12.0578C9.62504 11.7126 9.34524 11.4328 9.00008 11.4328C8.65493 11.4328 8.37512 11.7126 8.37512 12.0578C8.37512 12.4029 8.65493 12.6827 9.00008 12.6827Z"
+                                            fill="#D2DCE8" />
+                                        <path
+                                            d="M10.7435 3.64011H7.25648C7.06102 3.64011 6.90198 3.79173 6.90198 3.97776V10.5693C6.90198 10.7555 7.06091 10.907 7.25648 10.907H10.7435C10.939 10.907 11.098 10.7554 11.098 10.5693V3.97776C11.0979 3.79157 10.939 3.64011 10.7435 3.64011Z"
+                                            fill="#D2DCE8" />
+                                        <path
+                                            d="M9.00071 0C4.58263 0 1.00098 3.58192 1.00098 7.99984C1.00098 12.4178 4.58263 16 9.00071 16C13.4188 16 17.0009 12.418 17.0009 7.99984C17.0009 3.58171 13.4188 0 9.00071 0ZM12.1131 11.9478C12.1131 12.5589 11.6177 13.0544 11.0065 13.0544H6.99511C6.38402 13.0544 5.8885 12.5589 5.8885 11.9478V4.01723C5.8885 3.40613 6.38396 2.91061 6.99511 2.91061H11.0065C11.6176 2.91061 12.1131 3.40608 12.1131 4.01723V11.9478Z"
+                                            fill="#D2DCE8" />
+                                    </g>
+                                    <path
+                                        d="M14.996 -143C-67.843 -143 -134.999 -75.839 -134.999 6.99699C-134.999 89.833 -67.843 157 14.996 157C97.835 157 164.999 89.837 164.999 6.99699C164.999 -75.843 97.835 -143 14.996 -143ZM73.354 81.021C73.354 92.479 64.064 101.77 52.605 101.77H-22.609C-34.067 101.77 -43.358 92.48 -43.358 81.021V-67.677C-43.358 -79.135 -34.068 -88.426 -22.609 -88.426H52.605C64.063 -88.426 73.354 -79.136 73.354 -67.677V81.021Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect x="1" width="16" height="16" fill="white" />
+                                    </clipPath>
+                                    <clipPath id="clip1">
+                                        <rect x="1" width="16" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="pay__button">Pay KES 234,456</button>
+                <div class="secured__by__flutterwave">
+                    <span class="icon">
+                        <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.09138 4.28637H7.54006V3.44068C7.54006 1.76294 6.09815 0.398922 4.35938 0.398922C2.6206 0.398922 1.17869 1.76294 1.17869 3.44068V4.28637H0.669785C0.387057 4.28637 0.189148 4.62737 0.189148 4.90017V10.0425C0.189148 10.3153 0.387057 10.4244 0.669785 10.4244H8.10552C8.38824 10.4244 8.54374 10.3153 8.54374 10.0425V4.90017C8.52961 4.62737 8.35997 4.28637 8.09138 4.28637ZM3.68105 8.65122L3.90723 7.39633C3.70932 7.25992 3.5821 7.05532 3.5821 6.8098C3.5821 6.38695 3.93551 6.04595 4.37373 6.04595C4.81196 6.04595 5.16537 6.38695 5.16537 6.8098C5.16537 7.06896 5.03814 7.24628 4.84023 7.38269L5.06641 8.65122H3.68105ZM2.02707 3.44071V4.2864H6.69208V3.44071C6.69208 2.19945 5.63185 1.20372 4.35957 1.20372C3.0873 1.20372 2.02707 2.21309 2.02707 3.44071Z"
+                                fill="#F5A623" />
+                        </svg>
+                        <span class="text">SECURED BY FLUTTERWAVE</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="second__div">
+            <div class="pay">
+                <div class="payment__options__header">
+                    <h4>Payment Options</h4>
+                </div>
+                <div class="hover ">
+                    <div class="ul">
+                        <a href="#">
+                            <!-- <img src="../assets/img/barter.svg" /> -->
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3202 6.84745C12.2786 5.36687 16.3075 0.0752677 10.0125 1.00747C7.27064 1.39132 3.87172 3.63461 3.06036 6.43122C2.63706 5.68337 2.16998 4.9602 1.66147 4.26521C0.906062 3.30559 -0.591153 4.24276 0.248181 5.2298C2.6263 8.05382 4.27701 11.4536 4.27701 14.8808C4.47283 13.1809 4.79498 10.9003 4.06758 8.8714C4.33374 9.05094 4.35304 9.06443 4.53832 9.2834C5.82529 11.2026 7.80219 12.7971 10.0125 13.5648C12.0269 14.305 14.7127 13.8664 13.6216 10.9053"
+                                    fill="#959EA9" />
+                            </svg>
+
+                            <span>Card</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <div class="ul">
+                        <a href="# "><img src="../assets/img/barter.svg" /> <span>USSD</span></a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <div class="ul">
+                        <a href="#"><img src="../assets/img/barter.svg" /> <span>Bank</span></a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <div class="ul">
+                        <a href="#"><img src="../assets/img/barter.svg" /> <span>QR</span></a>
+                    </div>
+                </div>
+                <div class="hover">
+                    <div class="ul">
+                        <a href="#">
+                            <img src="../assets/img/barter.svg" />
+                            <span>Barter</span>
+                            <button
+                                style="background: #219653; padding: 5px; color: white; border: none; border-radius: 2px; margin-left: 104px;">
+                                0.5% cash back
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="more__payment__options">
+                    <p>More payment options</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
